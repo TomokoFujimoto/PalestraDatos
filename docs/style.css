@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    background-image: radial-gradient(circle at 120.95% -1.92%, #6cdfff 0, #0d69be 10%, #000 40%, #000 80%, #000 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+/********HEADER********/
+
+header {
+    min-height: 100vh;
+    display: flex;
+    color: white;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+header #header-container {
+    flex: 1;
+}
+
+header #intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.datas {
+    color: #0d69be;
+    font-weight: 800;
+}
+
+button {
+    
+    background-color: #023f7f;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 3.2em;
+    margin-left: -3px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 15px 0 20px;
+}
+
+header img {
+    margin-top: 80px;
+    height: 50px;
+}
+
+header #more {
+    text-align: center;
+}
+
+span {
+    font-size: .7em;
+}
+
+button {
+    display: block;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 8px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+header #email {
+    text-align: center;
+    background-image: linear-gradient(to right, #0d69be, #4481eb, #04befe, #3f86ed);
+    
+    transition: all .4s ease-in-out;
+
+}
+
+header #email:hover {
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+header #subscribe {
+    margin-top: 8px;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, #3f86ed, #03b1fc,#04d5eb, #2ec8ce, #04d4e6, #30dd8a);
+    transition: all .4s ease-in-out;
+}
+
+header #subscribe:hover {
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+/********SECTION********/
+
+section {
+    padding: 200px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    color: #0d69be;
+    text-align: center;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+section div {
+    background: 
+    linear-gradient(black, black) padding-box,
+    linear-gradient( #0d69be, #2ec8ce, #04d4e6, #15d8c3) border-box;
+    border-radius: 20px;
+    border: 4px solid transparent;
+    align-items: center;
+    width: 25%;
+    min-width: 200px;
+    padding: 20px;
+}
+
+/********MAIN********/
+
+main {
+    text-align: center;
+    background-image: radial-gradient(circle at -4.17% 95.45%, #6cdfff 0, #0d69be 10%, #000 40%, #000 80%, #000 100%);
+}
+
+main h2 {
+    font-size: 2.6em;
+}
+
+main h3 {
+    font-size: 1.5em;
+}
+
+.datas-main {
+    padding-bottom: 60px;
+    color: #0d69be;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+main #schedule {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+main .day {
+    width: 15%;
+}
+
+.faq-all-questions {
+    min-height: 100vh;
+}
+
+.faq-answer  {
+    color: white;
+    margin-top: 0;
+    padding-bottom: 14px;
+    padding-right: 14px;
+    display: none;
+    line-height: 16px;
+    
+    font-weight: 600;
+}
+.faq-answer h4  {
+    color: black;
+}
+
+.faq-answer p {
+    padding: 10px 0;
+}
+
+.active {
+    display: block;
+}
+
+.faq-question-container {
+    border-radius: 8px;
+    margin: 15px 0;
+    min-height: 75px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    
+    background-size: 300% 250%;;
+    border-radius: 8px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient( #3f86ed, #03b1fc,#04d5eb, #2ec8ce, #04d4e6, #30dd8a);
+    transition: all .4s ease-in-out;
+}
+
+.faq-question-container:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 4px 15px 0 rgba(48, 221, 138, 0.75);
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.faq-question {
+    cursor: pointer;
+}
+
+.faq-big {
+    min-height: 255px;
+}
+
+.faq-answer {
+    padding: 30px 0;
+}
+
+main img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+main p {
+    text-align: left;
+}
+
+/******************ICONS***************/
+
+
+.way_icon i {
+    font-size: 55px;
+    background: -moz-linear-gradient(top, rgba(13,105,190,1) 0%, rgba(3,242,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(13,105,190,1) 0%, rgba(3,242,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(13,105,190,1) 0%, rgba(3,242,255,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.link_icon i {
+    font-size: 55px;
+    color: white;
+}
+  
+.way_icon i:before {
+    display: initial;
+  }
+
+.way_icon a {
+    text-decoration: none;
+}
+
+/*********MOVEEE******/
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 880px) { 
+
+    body {
+        background-color: #000;
+    }
+
+    header {
+        background-image: radial-gradient(circle at 120.95% -1.92%, #6cdfff 0, #0d69be 10%, #000 40%, #000 80%, #000 100%);
+    }
+
+    section {
+        padding: 100px 10%;
+        background-color: black;
+    }
+
+    section div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header #intro {
+        flex-direction: column-reverse;
+    }
+
+    header img {
+        margin-bottom: 80px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #schedule {
+        flex-flow: column;
+    }
+
+    main .day {
+        width: 80%;
+        align-self: center;
+    }
+
+    .faq-all-questions {
+        min-height: 0;
+    }
+
+    .faq-answer {
+        width: 50%;
+    }
+
+    .faq-big {
+        min-height: 64px;
+    }
+
+    header #more {
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 420px) {
+
+
+    header #intro {
+        width: 90%;
+        align-self: center;
+    }
+
+    .faq-answer {
+        width: 90%;
+    }
+
+    
+}
